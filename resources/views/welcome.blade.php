@@ -132,9 +132,6 @@
                     Iniciar Sesión
                 </a>
 
-                <a href="<?php echo url('/register'); ?>" class="btn-odin" style="border-style: dotted; opacity: 0.7;">
-                    Unirse al Culto
-                </a>
             <?php endif; ?>
         </div>
 

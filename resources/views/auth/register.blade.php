@@ -142,13 +142,13 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="email">Canal Espiritual</label>
+                    <label for="email">Correo</label>
                     <input id="email" type="email" name="email" :value="old('email')" required autocomplete="username" />
                     <x-input-error :messages="$errors->get('email')" class="mt-1" />
                 </div>
 
                 <div class="input-group">
-                    <label for="password">Clave Ancestral</label>
+                    <label for="password">Clave</label>
                     <input id="password" type="password" name="password" required autocomplete="new-password" />
                     <x-input-error :messages="$errors->get('password')" class="mt-1" />
                 </div>
